@@ -2,6 +2,8 @@
 @import './variables.scss';
 @import './mixin.scss';
 @import './transition.scss';
+@import './welife.scss';
+@import './element-variables.scss';
 
 body {
   height: 100%;
@@ -316,11 +318,11 @@ table.native-table {
       line-height: 25px;
     }
     td.link { // 链接
-      color: $blue;
+      color: $primary-color;
       cursor: pointer;
     }
     td.created-by {  // 创建人
-      color: $blue;
+      color: $primary-color;
     }
   }
 }

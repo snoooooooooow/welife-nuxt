@@ -4,11 +4,11 @@
       <div class="pic">
         <img
           src="../../assets/images/404.png"
-          alt="x">
+          alt="404">
       </div>
       <div class="info">
-        <h1>404</h1>
-        <h4>返回首页</h4>
+        <h1 class="primary-text">404</h1>
+        <h4 class="primary-text">返回首页</h4>
         <el-button
           type="primary"
           @click.native="back">抱歉，该页面不存在</el-button>
@@ -18,7 +18,7 @@
 </template>
 <script>
 export default {
-  name: '404',
+  name: 'NotFound',
   methods: {
     back() {
       this.$router.push('/')
@@ -27,6 +27,7 @@ export default {
 }
 </script>
 <style lang="scss">
+@import '../../assets/css/variables.scss';
 .page-error {
   color: #707473;
   text-align: center;

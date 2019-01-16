@@ -32,7 +32,8 @@ module.exports = {
   */
   css: [
     '@/assets/css/index.scss',
-    'element-ui/lib/theme-chalk/index.css'
+    'element-ui/lib/theme-chalk/index.css',
+    '@/assets/css/element-variables.scss'
   ],
 
   /*

@@ -5,7 +5,7 @@
 <script>
 import Logo from '~/components/Logo.vue'
 export default {
-  layout: 'exception',
+  layout: 'blog',
   components: {
     Logo
   }
