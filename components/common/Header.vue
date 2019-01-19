@@ -6,13 +6,7 @@
         src="../../assets/images/logo.png">
       <ul>
         <li>
-          <a>博客</a>
-        </li>
-        <li>
-          <a>美文</a>
-        </li>
-        <li>
-          <a class="active">笔记</a>
+          <a class="active">博客</a>
         </li>
       </ul>
     </div>
@@ -21,9 +15,6 @@
 <script>
 export default {
   name: 'HeaderComponent',
-  created() {
-    console.log(this.$route, 'xx')
-  },
   methods: {
     back() {
       this.$router.push('/')
@@ -37,6 +28,7 @@ div.header {
   width: 100%;
   height: 60px;
   border-bottom: 1px solid #f1f1f1;
+  background-color: #fff;
   .menu-container {
     margin: 0 auto;
     height: 100%;

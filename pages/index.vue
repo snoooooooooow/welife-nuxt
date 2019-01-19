@@ -1,45 +1,133 @@
 <template>
-  <section class="container"/>
+  <section>
+    <div class="container">
+      <div class="main-container">
+        <header class="index-header padl10 padr10 padt15 padb15">
+          <nav class="nav">
+            <ul class="left">
+              <li class="active"><a class="ftz13">原创文章</a></li>
+              <li><a class="ftz13">ERROR(BUG)</a></li>
+              <li><a class="ftz13">收藏文章</a></li>
+            </ul>
+          </nav>
+        </header>
+      </div>
+      <div class="card-container">
+        <index-card />
+      </div>
+    </div>
+  </section>
 </template>
 
 <script>
-import Logo from '~/components/Logo.vue'
+import IndexCard from '~/components/cardspanel/IndexCard.vue'
 export default {
-  layout: 'blog',
+  layout: 'index',
   components: {
-    Logo
+    IndexCard
   }
 }
 </script>
 
-<style>
+<style lang="scss">
+@import '../assets/css/variables.scss';
+
+section {
+  padding-top: 40px;
+  background-color: $container-bg;
+}
+
 .container {
-  min-height: 100vh;
+  min-height: calc(100vh - 60px);
   display: flex;
-  justify-content: center;
-  align-items: center;
+  flex-flow: row;
   text-align: center;
-}
+  background-color: $container-bg;
 
-.title {
-  font-family: 'Quicksand', 'Source Sans Pro', -apple-system, BlinkMacSystemFont,
-    'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-  display: block;
-  font-weight: 300;
-  font-size: 100px;
-  color: #35495e;
-  letter-spacing: 1px;
+  .main-container {
+    background-color: #fff;
+    .index-header {
+      border-bottom: 1px solid #f4f4f4;
+      nav {
+        display: flex;
+        justify-content: space-between;
+        ul {
+          display: flex;
+          justify-content: space-between;
+          line-height: 1;
+        }
+        ul.left {
+          li {
+            padding: 0 15px;
+            border-right: 1px solid #eaeaea;
+            font-size: 0;
+            cursor: pointer;
+            a {
+              color: #909090;
+            }
+          }
+          li:last-child {
+            border-right: none;
+          }
+          li:hover {
+            a {
+              color: $primary-color;
+            }
+          }
+          li.active {
+            a {
+              color: $primary-color;
+            }
+          }
+        }
+      }
+    }
+  }
 }
+@media screen and (min-width: 820px) {
+  div.container {
+    width: 980px;
+    margin: 0 auto;
 
-.subtitle {
-  font-weight: 300;
-  font-size: 42px;
-  color: #526488;
-  word-spacing: 5px;
-  padding-bottom: 15px;
+    .main-container {
+      flex: 1;
+      margin-right: 20px;
+    }
+
+    .card-container {
+      width: 240px;
+    }
+  }
 }
+@media screen and (min-width: 820px) and (max-width: 980px) {
+  div.container {
+    width: 100%;
+    margin: 0 auto;
 
-.links {
-  padding-top: 15px;
+    .main-container {
+      flex: 1;
+      margin-right: 20px;
+    }
+
+    .card-container {
+      width: 240px;
+    }
+  }
+}
+@media screen and (max-width: 820px) {
+  div.container {
+    width: 100%;
+    margin: 0 auto;
+
+    .main-container {
+      flex: 1;
+      margin-right: 20px;
+      margin-left: 20px;
+    }
+
+    .card-container {
+      display: none;
+    }
+  }
 }
 </style>

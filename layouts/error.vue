@@ -14,9 +14,6 @@ export default {
       default: () => {}
     }
   },
-  created() {
-    console.log(this.error, 'error')
-  },
   layout: 'error' // 你可以为错误页面指定自定义的布局
 }
 </script>

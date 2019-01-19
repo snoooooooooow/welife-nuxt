@@ -15,7 +15,8 @@ body {
 }
 
 * {
-  margin: 0px;
+  margin: 0;
+  padding: 0;
 }
 label {
   font-weight: 700;
@@ -37,7 +38,7 @@ html {
 }
 
 .no-padding {
-  padding: 0px !important;
+  padding: 0px;
 }
 
 .padding-content {
@@ -59,6 +60,10 @@ a:hover {
 
 div:focus{
   outline: none;
+}
+
+ul li {
+  list-style: none;
 }
 
 .fr {
@@ -119,120 +124,147 @@ code {
 
 // margin
 .nomargin {
-  margin: 0 !important;
+  margin: 0;
 }
 .nomart {
-  margin-top: 0 !important;
+  margin-top: 0;
 }
 .nomarb {
-  margin-bottom: 0 !important;
+  margin-bottom: 0;
 }
 .nomarl {
-  margin-left: 0 !important;
+  margin-left: 0;
 }
 .nomarr {
-  margin-right: 0 !important;
+  margin-right: 0;
 }
 .mrt2 {
-  margin-top: 2px !important;
+  margin-top: 2px;
+}
+.mrt4 {
+  margin-top: 4px;
 }
 .mrt5 {
-  margin-top: 5px !important;
+  margin-top: 5px;
 }
 .mrt10 {
-  margin-top: 10px !important;
+  margin-top: 10px;
 }
 .mrt15 {
-  margin-top: 15px !important;
+  margin-top: 15px;
 }
 .mrt20 {
-  margin-top: 20px !important;
+  margin-top: 20px;
 }
 .mrt30 {
-  margin-top: 30px !important;
+  margin-top: 30px;
 }
 .mrt40 {
-  margin-top: 40px !important;
+  margin-top: 40px;
 }
 .mrb15 {
-  margin-bottom: 15px !important;
+  margin-bottom: 15px;
 }
 .mrb20 {
-  margin-bottom: 20px !important;
+  margin-bottom: 20px;
 }
 .mrb40 {
-  margin-bottom: 40px !important;
+  margin-bottom: 40px;
 }
 .mrt-20 {
-  margin-top: -20px !important;
+  margin-top: -20px;
 }
 .mrt-10 {
-  margin-top: -10px !important;
+  margin-top: -10px;
 }
 .mrt-30 {
-  margin-top: -30px !important;
+  margin-top: -30px;
 }
 .mrt-40 {
-  margin-top: -40px !important;
+  margin-top: -40px;
 }
 
 // padding
+.pad10 {
+  padding: 10px;
+}
+.pad15 {
+  padding: 15px;
+}
+.pad20 {
+  padding: 20px;
+}
 .npdt {
-  padding-top: 0px !important;
+  padding-top: 0px;
 }
 .npdl {
-  padding-left: 0px !important;
+  padding-left: 0px;
 }
 .npdr {
-  padding-right: 0px !important;
+  padding-right: 0px;
 }
 .npdb {
-  padding-bottom: 0px !important;
+  padding-bottom: 0px;
 }
 .padt2 {
-  padding-top: 2px !important;
+  padding-top: 2px;
 }
 .padt5 {
-  padding-top: 5px !important;
+  padding-top: 5px;
 }
 .padt10 {
-  padding-top: 10px !important;
+  padding-top: 10px;
 }
 .padt15 {
-  padding-top: 15px !important;
+  padding-top: 15px;
 }
 .padt20 {
-  padding-top: 20px !important;
+  padding-top: 20px;
 }
 .padt30 {
-  padding-top: 30px !important;
+  padding-top: 30px;
 }
 .padt40 {
-  padding-top: 40px !important;
+  padding-top: 40px;
+}
+.padl10 {
+  padding-left: 10px;
+}
+.padr15 {
+  padding-right: 15px;
+}
+.padr10 {
+  padding-right: 10px;
+}
+.padl15 {
+  padding-left: 15px;
 }
 .padb15 {
-  padding-bottom: 15px !important;
+  padding-bottom: 15px;
 }
 .padb20 {
-  padding-bottom: 20px !important;
+  padding-bottom: 20px;
 }
 .padb40 {
-  padding-bottom: 40px !important;
+  padding-bottom: 40px;
 }
 .padt-20 {
-  padding-top: -20px !important;
+  padding-top: -20px;
 }
 .padt-10 {
-  padding-top: -10px !important;
+  padding-top: -10px;
 }
 .padt-30 {
-  padding-top: -30px !important;
+  padding-top: -30px;
 }
 .padt-40 {
-  padding-top: -40px !important;
+  padding-top: -40px;
 }
 
 // font size
+.ftz0 {
+  font-size: 0;
+}
 .ftz11 {
   font-size: 11px;
 }
@@ -260,25 +292,25 @@ code {
 
 // width
 .width50 {
-  width: 50px !important;
+  width: 50px;
 }
 .width80 {
-  width: 80px !important;
+  width: 80px;
 }
 .width100 {
-  width: 100px !important;
+  width: 100px;
 }
 .width120 {
-  width: 120px !important;
+  width: 120px;
 }
 .width150 {
-  width: 150px !important;
+  width: 150px;
 }
 .width180 {
-  width: 180px !important;
+  width: 180px;
 }
 .width200 {
-  width: 200px !important;
+  width: 200px;
 }
 
 // align
